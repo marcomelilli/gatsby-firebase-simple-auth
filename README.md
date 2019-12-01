@@ -1,14 +1,24 @@
-# Gatsby Firebase Simple Authentication Starter
+<div align="center">
+    <img src="static/gatsby-firebase-logo.png" alt="Logo" width='70%' height='auto'/>
+</div>
 
-This is a simplified starter to show how an authentication workflow is implemented in Gatsby using [Firebase](https://firebase.google.com/) as authentication provider.
+# Gatsby Firebase Authentication Starter
 
-This starter follows the best practices described in the official gatsby doc: [Client-only Routes](https://www.gatsbyjs.org/docs/client-only-routes-and-user-authentication/) and [User Authentication](https://www.gatsbyjs.org/tutorial/authentication-tutorial/). It uses [Gatsby Plugin Firebase](https://www.gatsbyjs.org/packages/gatsby-plugin-firebase/) to import and set firebase SDK, and [Gatsby Plugin Create Client Path](https://www.gatsbyjs.org/packages/gatsby-plugin-create-client-paths) to set a private route.
+This is a gatsby starter to show how an **authentication workflow** is implemented in Gatsby using [Firebase](https://firebase.google.com/) as authentication provider.
 
-The short version is:
-- Gatsby statically renders all unauthenticated routes as usual static pages
-- Authenticated routes are whitelisted as client-only (in this starter in the path mysite/app/*)
-- Logged out users are redirected to the login page if they attempt to visit private routes
-- Logged in users will see their private content
+🚀 Here a [live demo](https://gatsby-firebase-simple-auth.netlify.com/) of the site.
+
+This starter follows the best practices described in the official gatsby site: 
+* [Client-only Routes](https://www.gatsbyjs.org/docs/client-only-routes-and-user-authentication/) doc
+* [User Authentication](https://www.gatsbyjs.org/tutorial/authentication-tutorial/) tutorial
+
+It uses [Gatsby Plugin Firebase](https://www.gatsbyjs.org/packages/gatsby-plugin-firebase/) to import and set firebase SDK, and [Gatsby Plugin Create Client Path](https://www.gatsbyjs.org/packages/gatsby-plugin-create-client-paths) to set private routes.
+
+How it works in short:
+- Gatsby renders all unauthenticated routes as usual static pages.
+- Authenticated routes are whitelisted as client-only (in this starter all dynamic pages are under the path 'mysite.com/app/*').
+- Logged-out users are redirected to the login page if they attempt to visit private routes.
+- Logged-in users will see their private content.
 
 # Getting Started
 
@@ -28,6 +38,6 @@ GATSBY_FIREBASE_MEASUREMENT_ID=<YOUR_FIREBASE_ANALYTICS_TRACKING_ID>
 and then:
 
 ```
-npm install # or yarn install
+npm install
 gatsby develop 
 ```
