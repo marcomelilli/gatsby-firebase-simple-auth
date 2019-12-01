@@ -15,11 +15,11 @@ const Index = () => (
       <p>
        📚 It uses concepts from the
         {` `}
-        <a href="https://www.gatsbyjs.org/docs/client-only-routes-and-user-authentication/">
+        <a className="underline text-blue-500" href="https://www.gatsbyjs.org/docs/client-only-routes-and-user-authentication/">
           client-only routes section
         </a>
         {` `} and {` `}
-        <a href="https://www.gatsbyjs.org/tutorial/authentication-tutorial">
+        <a className="underline text-blue-500" href="https://www.gatsbyjs.org/tutorial/authentication-tutorial">
           making a site with user authentication
         </a>
         {` `}
