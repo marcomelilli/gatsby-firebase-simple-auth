@@ -7,10 +7,13 @@ import Status from "../components/Status"
 const Index = () => (
   <Layout>
     <Status />
-    <View title="Firebase Simple Authentication Example">
+    <View title="Firebase Authentication Starter">
       <p>
-        This is a simple example of creating dynamic apps with Gatsby that
-        require user authentication using Firebase as authentication provider. It uses concepts from the
+      👋 This is a simple demo of creating dynamic pages with Gatsby that require <b>user authentication</b> and using <b>Firebase</b> as authentication provider. 
+      </p>  
+      <br/>
+      <p>
+       📚 It uses concepts from the
         {` `}
         <a href="https://www.gatsbyjs.org/docs/client-only-routes-and-user-authentication/">
           client-only routes section
@@ -20,12 +23,15 @@ const Index = () => (
           making a site with user authentication
         </a>
         {` `}
-        from official gatsby doc
+        tutorial in the official gatsby doc.
       </p>
+      <br/>
       <p>
-        Imagine this is the home of your gatsby project and a user decide to go to his profile page: 
-        {` `}
-        <Link to="/app/profile">your profile</Link>.
+        This is the public home, and here it is a private route to start:  
+        <br/>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline float-right" type="button">
+          <Link to="/app/profile">Go to your profile</Link>
+        </button>
       </p>
     </View>
   </Layout>

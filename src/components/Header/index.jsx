@@ -1,30 +1,24 @@
 import React from "react"
 import { Link } from "gatsby"
-import styles from "./header.module.css"
 
 const Header = () => (
-  <header className={styles.header}>
-    <div className={styles[`header__wrap`]}>
-      <h1 className={styles[`header__heading`]}>
-        <Link
-          to="/"
-          className={`${styles[`header__link`]} ${
-            styles[`header__link--home`]
-          }`}
-        >
-          Gatsby Firebase Auth
-        </Link>
-      </h1>
-      <nav role="main" className={styles[`header__nav`]}>
-        <Link to="/" className={styles[`header__link`]}>
-          Home
-        </Link>
-        <Link to="/app/profile" className={styles[`header__link`]}>
-          Profile
-        </Link>
-      </nav>
+  <nav class="w-full flex items-center justify-between bg-blue-700 p-6">
+    <div class="items-center w-1/2 text-white mr-6 text-center">
+      <span class="font-semibold text-xl">Gatsby Firebase Auth</span>
     </div>
-  </header>
+      <div class="w-1/2 text-sm flex flex-row-reverse">
+        <Link to="/app/profile">
+          <a class="block mt-2 text-white hover:text-grey-500 mr-4">
+            Profile
+          </a>        
+        </Link>
+        <Link to="/">
+          <a class="block mt-2 text-white hover:text-grey-500 mr-4">
+            Home
+          </a>
+        </Link>
+      </div>
+  </nav>
 )
 
 export default Header
