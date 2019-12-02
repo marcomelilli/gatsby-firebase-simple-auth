@@ -7,9 +7,7 @@ export default () => {
   if (!isLoggedIn()) {
     details = (
       <p className="text-right px-5">
-        To get the full app experience, you’ll need to
-        {` `}
-        <Link to="/app/login"><u>log in</u></Link>
+        <Link to="/app/login"><u>Log in</u></Link>
       </p>
     )
   } else {
