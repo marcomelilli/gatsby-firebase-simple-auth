@@ -8,18 +8,16 @@ export const getUser = () =>
 export const setUser = user =>
   isBrowser() && window.localStorage.setItem("user", JSON.stringify(user))
 
-const deleteFirebaseCookie = () => {
-  const firebaseAuthUser = isBrowser() && Object.keys(window.localStorage).filter(item => item.startsWith('firebaseui:'))[0]
-  isBrowser() && window.localStorage.removeItem(firebaseAuthUser);
-}
-
-export const isLoggedIn = () => {
+  export const isLoggedIn = () => {
   const user = getUser()
   return !!user.email
 }
 
-export const logout = callback => {
-  deleteFirebaseCookie();
-  setUser({})
-  callback()
+export const logout = (firebase) => {
+  return new Promise(resolve => {
+    firebase.auth().signOut().then(function() {
+      setUser({});
+      resolve();
+    });
+  })
 }

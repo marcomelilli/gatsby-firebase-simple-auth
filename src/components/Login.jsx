@@ -9,37 +9,37 @@ import { useFirebase } from "gatsby-plugin-firebase"
 const Login = () => {
   const [firebase, setFirebase] = useState();
 
-    useFirebase(firebase => {
-      setFirebase(firebase);
-    }, [])
+  useFirebase(firebase => {
+    setFirebase(firebase);
+  }, [])
 
-    if (isLoggedIn()) {
-      navigate(`/app/profile`)
-    }
+  if (isLoggedIn()) {
+    navigate(`/app/profile`)
+  }
 
-    function getUiConfig(auth) {
-      return {
-        signInFlow: 'popup',
-        signInOptions: [
-          auth.GoogleAuthProvider.PROVIDER_ID,
-          auth.EmailAuthProvider.PROVIDER_ID
-        ],
-        // signInSuccessUrl: '/app/profile',
-        callbacks: {
-          signInSuccessWithAuthResult: (result) => {
-            setUser(result.user);
-            navigate('/app/profile');
-          }
+  function getUiConfig(auth) {
+    return {
+      signInFlow: 'popup',
+      signInOptions: [
+        auth.GoogleAuthProvider.PROVIDER_ID,
+        auth.EmailAuthProvider.PROVIDER_ID
+      ],
+      // signInSuccessUrl: '/app/profile',
+      callbacks: {
+        signInSuccessWithAuthResult: (result) => {
+          setUser(result.user);
+          navigate('/app/profile');
         }
-      };
-    }
+      }
+    };
+  }
 
-    return (
-      <View title="Log In">
-        <p>Please sign-in to access to the private route:</p>
-        {firebase && <StyledFirebaseAuth uiConfig={getUiConfig(firebase.auth)} firebaseAuth={firebase.auth()}/>}
-      </View>
-    );
+  return (
+    <View title="Log In">
+      <p>Please sign-in to access to the private route:</p>
+      {firebase && <StyledFirebaseAuth uiConfig={getUiConfig(firebase.auth)} firebaseAuth={firebase.auth()}/>}
+    </View>
+  );
 
 }
 
