@@ -41,3 +41,12 @@ and then:
 npm install
 gatsby develop 
 ```
+
+# Contributing
+If you want to contribute to this starter, consider:
+
+- Reporting bugs and errors
+- Improve the documentation
+- Creating new features and pull requests
+
+All contributions are welcome!
