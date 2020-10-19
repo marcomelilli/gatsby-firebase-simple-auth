@@ -61,3 +61,4 @@ bundle-stats.json
 .history
 .env.*
 .env
+!.env.sample
