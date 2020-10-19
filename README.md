@@ -20,9 +20,9 @@ How it works in short:
 - Logged-out users are redirected to the login page if they attempt to visit private routes.
 - Logged-in users will see their private content.
 
-# Getting Started
+# Getting started with Firebase
 
-Create the `.env.development` and `.env.production` file in your root directory:
+Copy and rename `.env.sample` to `.env.development` and `.env.production` in your root directory. Use these environment variables for Firebase:
 
 ```
 GATSBY_FIREBASE_API_KEY=<YOUR_FIREBASE_API_KEY>
@@ -35,7 +35,12 @@ GATSBY_FIREBASE_APP_ID=<YOUR_FIREBASE_APP_ID>
 GATSBY_FIREBASE_MEASUREMENT_ID=<YOUR_FIREBASE_ANALYTICS_TRACKING_ID>
 ```
 
-and then:
+- Get your Firebase environment variables by [creating a Firebase project](https://firebase.google.com/docs/web/setup)
+- More information about [how Firebase works in a website](https://firebase.google.com/docs/projects/learn-more)
+- Features of [Firebase authentication](https://firebase.google.com/docs/auth)
+- Note that environment variables that need to be available in the browser [have to be prefixed](https://www.gatsbyjs.com/docs/environment-variables/#client-side-javascript) with `GATSBY_`
+
+# Start developing
 
 ```
 npm install
