@@ -6,17 +6,17 @@
   "dependencies": {
     "dotenv-webpack": "^1.7.0",
     "firebase": "^7.5.0",
-    "gatsby": "^2.18.4",
+    "gatsby": "^2.27.4",
     "gatsby-plugin-create-client-paths": "^2.1.17",
     "gatsby-plugin-favicon": "^3.1.6",
-    "gatsby-plugin-firebase": "^0.1.5",
+    "gatsby-plugin-firebase": "^0.2.0-beta.4",
     "gatsby-plugin-postcss": "^2.1.1",
     "gatsby-plugin-react-helmet": "^3.1.10",
     "prop-types": "^15.6.1",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
-    "react-helmet": "^5.2.0",
     "react-firebaseui": "^4.0.0",
+    "react-helmet": "^5.2.0",
     "tailwindcss": "^1.0.5"
   },
   "keywords": [

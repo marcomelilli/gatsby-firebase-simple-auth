@@ -12,7 +12,7 @@ This starter follows the best practices described in the official gatsby site:
 * [Client-only Routes](https://www.gatsbyjs.org/docs/client-only-routes-and-user-authentication/) doc
 * [User Authentication](https://www.gatsbyjs.org/tutorial/authentication-tutorial/) tutorial
 
-It uses [Gatsby Plugin Firebase](https://www.gatsbyjs.org/packages/gatsby-plugin-firebase/) to import and set firebase SDK, and [Gatsby Plugin Create Client Path](https://www.gatsbyjs.org/packages/gatsby-plugin-create-client-paths) to set private routes.
+It uses [Gatsby Plugin Firebase](https://www.gatsbyjs.org/packages/gatsby-plugin-firebase/) v0.2 to import and set firebase SDK, and [Gatsby Plugin Create Client Path](https://www.gatsbyjs.org/packages/gatsby-plugin-create-client-paths) to set private routes.
 
 How it works in short:
 - Gatsby renders all unauthenticated routes as usual static pages.
@@ -32,7 +32,6 @@ GATSBY_FIREBASE_PROJECT_ID=<YOUR_FIREBASE_PROJECT_ID>
 GATSBY_FIREBASE_STORAGE_BUCKET=<YOUR_FIREBASE_STORAGE_BUCKET>
 GATSBY_FIREBASE_MESSAGING_SENDER_ID=<YOUR_FIREBASE_MESSAGING_SENDER_ID>
 GATSBY_FIREBASE_APP_ID=<YOUR_FIREBASE_APP_ID>
-GATSBY_FIREBASE_MEASUREMENT_ID=<YOUR_FIREBASE_ANALYTICS_TRACKING_ID>
 ```
 
 - Get your Firebase environment variables by [creating a Firebase project](https://firebase.google.com/docs/web/setup)
