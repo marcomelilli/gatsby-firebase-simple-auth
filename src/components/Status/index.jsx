@@ -1,9 +1,10 @@
 import React from "react"
 import { Link, navigate } from "@reach/router"
 import { getUser, isLoggedIn, logout } from "../../utils/auth"
-import firebase from "gatsby-plugin-firebase"
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth';
 
-export default () => {
+const Status = () => {
 
   let details;
   if (!isLoggedIn()) {
@@ -28,3 +29,5 @@ export default () => {
 
   return <div>{details}</div>
 }
+
+export default Status;

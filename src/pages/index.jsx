@@ -29,7 +29,7 @@ const Index = () => (
       <p>
         This is the public home, and here it is a private route to start:  
         <br/>
-        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline float-right" type="button">
+        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline float-right" type="button">
           <Link to="/app/profile">Go to your profile</Link>
         </button>
       </p>

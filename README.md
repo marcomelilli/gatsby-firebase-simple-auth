@@ -12,7 +12,7 @@ This starter follows the best practices described in the official gatsby site:
 * [Client-only Routes](https://www.gatsbyjs.org/docs/client-only-routes-and-user-authentication/) doc
 * [User Authentication](https://www.gatsbyjs.org/tutorial/authentication-tutorial/) tutorial
 
-It uses [Gatsby Plugin Firebase](https://www.gatsbyjs.org/packages/gatsby-plugin-firebase/) v0.2 to import and set firebase SDK, and [Gatsby Plugin Create Client Path](https://www.gatsbyjs.org/packages/gatsby-plugin-create-client-paths) to set private routes.
+It uses [Gatsby Plugin Create Client Path](https://www.gatsbyjs.org/packages/gatsby-plugin-create-client-paths) to set private routes.
 
 How it works in short:
 - Gatsby renders all unauthenticated routes as usual static pages.
@@ -25,13 +25,13 @@ How it works in short:
 Copy and rename `.env.sample` to `.env.development` and `.env.production` in your root directory. Use these environment variables for Firebase:
 
 ```
-GATSBY_FIREBASE_API_KEY=<YOUR_FIREBASE_API_KEY>
-GATSBY_FIREBASE_AUTH_DOMAIN=<YOUR_FIREBASE_AUTH_DOMAIN>
-GATSBY_FIREBASE_DATABASE_URL=<YOUR_FIREBASE_DATABASE_URL>
-GATSBY_FIREBASE_PROJECT_ID=<YOUR_FIREBASE_PROJECT_ID>
-GATSBY_FIREBASE_STORAGE_BUCKET=<YOUR_FIREBASE_STORAGE_BUCKET>
-GATSBY_FIREBASE_MESSAGING_SENDER_ID=<YOUR_FIREBASE_MESSAGING_SENDER_ID>
-GATSBY_FIREBASE_APP_ID=<YOUR_FIREBASE_APP_ID>
+FIREBASE_API_KEY=<YOUR_FIREBASE_API_KEY>
+FIREBASE_AUTH_DOMAIN=<YOUR_FIREBASE_AUTH_DOMAIN>
+FIREBASE_DATABASE_URL=<YOUR_FIREBASE_DATABASE_URL>
+FIREBASE_PROJECT_ID=<YOUR_FIREBASE_PROJECT_ID>
+FIREBASE_STORAGE_BUCKET=<YOUR_FIREBASE_STORAGE_BUCKET>
+FIREBASE_MESSAGING_SENDER_ID=<YOUR_FIREBASE_MESSAGING_SENDER_ID>
+FIREBASE_APP_ID=<YOUR_FIREBASE_APP_ID>
 ```
 
 - Get your Firebase environment variables by [creating a Firebase project](https://firebase.google.com/docs/web/setup)

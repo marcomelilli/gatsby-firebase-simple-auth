@@ -4,20 +4,16 @@
   "version": "1.0.0",
   "author": "Marco Melilli <marcomelilli92@gmail.com>",
   "dependencies": {
-    "dotenv-webpack": "^1.7.0",
-    "firebase": "^7.5.0",
-    "gatsby": "^2.27.4",
-    "gatsby-plugin-create-client-paths": "^2.1.17",
-    "gatsby-plugin-favicon": "^3.1.6",
-    "gatsby-plugin-firebase": "^0.2.0-beta.4",
-    "gatsby-plugin-postcss": "^2.1.1",
-    "gatsby-plugin-react-helmet": "^3.1.10",
+    "dotenv-webpack": "^6.0.0",
+    "firebase": "^9.8.2",
+    "gatsby": "^4.15.2",
+    "gatsby-plugin-create-client-paths": "^4.9.0",
+    "gatsby-plugin-react-helmet": "^5.15.0",
     "prop-types": "^15.6.1",
-    "react": "^16.4.0",
-    "react-dom": "^16.4.0",
-    "react-firebaseui": "^4.0.0",
-    "react-helmet": "^5.2.0",
-    "tailwindcss": "^1.0.5"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-firebaseui": "^6.0.0",
+    "react-helmet": "^5.2.0"
   },
   "keywords": [
     "gatsby"
@@ -33,5 +29,16 @@
     "clean": "rm -rf public && rm -rf .cache",
     "lint:js": "eslint --ext .js,.jsx .",
     "format:js": "prettier '**/*.{js,jsx}' --write"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "gatsby-plugin-postcss": "^5.15.0",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.0.24"
+  },
+  "overrides": {
+    "graphql": "^15.4.0",
+    "graphql-compose": "^7.25.0",
+    "webpack": "^5.24.2"
   }
 }

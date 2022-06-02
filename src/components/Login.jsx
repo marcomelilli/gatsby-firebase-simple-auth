@@ -2,8 +2,9 @@ import React from "react"
 import { navigate } from '@reach/router';
 import View from "./View"
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth';
 import { setUser, isLoggedIn } from "../utils/auth"
-import firebase from "gatsby-plugin-firebase"
 
 const Login = () => {
 
