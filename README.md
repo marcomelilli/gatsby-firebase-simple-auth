@@ -6,8 +6,6 @@
 
 This is a gatsby starter to show how an **authentication workflow** is implemented in Gatsby using [Firebase](https://firebase.google.com/) as authentication provider.
 
-🚀 Here a [live demo](https://gatsby-firebase-simple-auth.netlify.com/) of the site.
-
 This starter follows the best practices described in the official gatsby site: 
 * [Client-only Routes](https://www.gatsbyjs.org/docs/client-only-routes-and-user-authentication/) doc
 * [User Authentication](https://www.gatsbyjs.org/tutorial/authentication-tutorial/) tutorial
